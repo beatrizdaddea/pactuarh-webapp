@@ -11,7 +11,7 @@
     "standard"
   ],
   "plugins": [
-    "@typescript-eslint", "react-hooks", "prettier"
+    "@typescript-eslint", "react-hooks", "prettier", "only-warn"
   ],
   "rules": {
     "prettier/prettier": "error",

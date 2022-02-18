@@ -7,7 +7,7 @@ export const theme = {
     },
     neutral: {
       100: '#F7F7F7',
-      300: '#383837',
+      200: '#E0E0E0',
     },
   },
   font: {
