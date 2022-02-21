@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { SignIn, SignUp, Terms } from 'pages'
-import { SIGN_IN, SIGN_UP, TERMS } from 'routes'
+import { Dashboard, SignIn, SignUp, Terms } from 'pages'
+import { DASHBOARD, SIGN_IN, SIGN_UP, TERMS } from 'routes'
 import { GlobalStyle } from 'ui'
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Route path={SIGN_IN} element={<SignIn />} />
         <Route path={SIGN_UP} element={<SignUp />} />
         <Route path={TERMS} element={<Terms />} />
+        <Route path={DASHBOARD} element={<Dashboard />} />
       </Routes>
       <GlobalStyle />
     </BrowserRouter>

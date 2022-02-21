@@ -8,6 +8,7 @@ export const theme = {
     neutral: {
       100: '#F7F7F7',
       200: '#E0E0E0',
+      500: '#8484844F',
     },
   },
   font: {
