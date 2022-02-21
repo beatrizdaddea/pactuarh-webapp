@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   &::selection {
-    color: ${theme.colors.black};
-    background: ${theme.colors.neutral[100]};
+    color: ${theme.colors.neutral[100]};
+    background: ${theme.colors.black};
   }
 `
