@@ -17,7 +17,7 @@ type FormData = {
   terms: string
 }
 
-export function SignUp() {
+export default function SignUp() {
   const [textPass, setTextPass] = useState(true)
 
   const navigate = useNavigate()
@@ -90,16 +90,18 @@ export function SignUp() {
               <option value='Usuário'>Usuário</option>
             </select>
           </S.ContentForm>
-          <input
-            type='checkbox'
-            {...register('terms', {
-              required: true,
-            })}
-          />
-          <p>
-            Aceito os <Link to='/termos'> Termos e condições</Link> e autorizo o
-            uso de meus dados de acordo com a Declaração de privacidade.
-          </p>
+          <S.CheckDiv>
+            <input
+              type='checkbox'
+              {...register('terms', {
+                required: true,
+              })}
+            />
+            <p>
+              Aceito os <Link to='/termos'> Termos e condições</Link> e autorizo
+              o uso de meus dados de acordo com a Declaração de privacidade.
+            </p>
+          </S.CheckDiv>
           <SubmitButton />
         </form>
       </S.Content>

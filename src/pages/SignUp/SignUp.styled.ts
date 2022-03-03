@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import { theme } from 'config'
 
 export const Container = styled.div`
+  height: 100vh;
+
   img {
     height: 100vh;
 
-    @media (max-width: 1162px) {
+    @media (max-width: 940px) {
       display: none;
     }
   }
@@ -13,39 +15,27 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   position: absolute;
-  right: 15%;
-  top: 20%;
+  left: 55%;
+  top: 7%;
+  max-width: 345px;
 
-  @media (max-width: 1162px) {
-    right: 10%;
-  }
-
-  p {
-    margin: -23px 0 0 20px;
-    max-width: 330px;
-    font-size: 14px;
-  }
-
-  a {
-    color: ${theme.colors.neutral[200]};
+  @media (max-width: 940px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 `
 
 export const Password = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-
   button {
     background: none;
     border: 0;
     bottom: 0;
-    position: absolute;
-    right: 0;
+    position: relative;
+    left: 320px;
     transition: 1s;
-    top: 35px;
+    top: -41px;
     width: 30px;
     color: ${theme.colors.black};
     opacity: 45%;
@@ -80,5 +70,19 @@ export const ContentForm = styled.div`
   label {
     font-size: 14px;
     color: ${theme.colors.black};
+  }
+`
+
+export const CheckDiv = styled.div`
+  display: flex;
+  margin: 10px 0;
+
+  input[type='checkbox'] {
+    margin-top: 6px;
+  }
+
+  p {
+    font-size: 12px;
+    margin-left: 10px;
   }
 `

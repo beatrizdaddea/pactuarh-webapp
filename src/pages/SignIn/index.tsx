@@ -14,7 +14,7 @@ type FormData = {
   password: string
 }
 
-export function SignIn() {
+export default function SignIn() {
   const [textPass, setTextPass] = useState(true)
 
   const navigate = useNavigate()

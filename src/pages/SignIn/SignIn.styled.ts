@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import { theme } from 'config'
 
 export const Container = styled.div`
+  height: 100vh;
+
   img {
     height: 100vh;
 
-    @media (max-width: 1162px) {
+    @media (max-width: 940px) {
       display: none;
     }
   }
@@ -13,37 +15,37 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   position: absolute;
-  right: 15%;
-  top: 35%;
+  left: 52%;
+  top: 27%;
+  max-width: 345px;
 
   a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: ${theme.colors.black};
-    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    max-width: 345px;
+    margin: 30px 0;
   }
 
-  @media (max-width: 1162px) {
-    right: 10%;
+  @media (max-width: 940px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 `
 
 export const Password = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-
   button {
     background: none;
     border: 0;
     bottom: 0;
-    position: absolute;
-    right: 0;
+    position: relative;
+    left: 320px;
     transition: 1s;
-    top: 35px;
+    top: -41px;
     width: 30px;
     color: ${theme.colors.black};
     opacity: 45%;

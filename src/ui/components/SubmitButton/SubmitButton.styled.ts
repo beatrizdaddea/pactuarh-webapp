@@ -11,6 +11,8 @@ export const Container = styled.div`
     background: ${theme.colors.black};
     color: ${theme.colors.neutral[100]};
 
+    margin: 20px 0;
+
     :hover {
       transform: translateX(0px) scale(1.1);
     }

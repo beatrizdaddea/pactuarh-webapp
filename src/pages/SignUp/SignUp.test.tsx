@@ -1,5 +1,5 @@
 import { render, screen, userEvent } from 'src/../__helpers__/app-tests'
-import { SignUp } from '.'
+import SignUp from '.'
 
 describe('Sign in screen', () => {
   it('Checks if the sign up screen loads correctly', () => {
