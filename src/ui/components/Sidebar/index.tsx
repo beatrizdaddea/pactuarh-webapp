@@ -56,7 +56,7 @@ const Sidebar = () => {
             <SidebarContent>
               <Menu iconShape='square'>
                 <MenuItem active={true} icon={<FiHome />}>
-                  Início
+                  <Link to='/dashboard'>Inicío</Link>
                 </MenuItem>
                 <SubMenu title='Cadastros' icon={<FiEdit />}>
                   <MenuItem>

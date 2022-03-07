@@ -7,12 +7,12 @@ export const Container = styled.div`
   }
   #header .pro-sidebar {
     height: 100vh;
+    z-index: 1;
   }
   #header .closemenu {
     color: white;
     position: absolute;
     left: 24px;
-    z-index: 9999;
     line-height: 20px;
     border-radius: 50%;
     font-weight: bold;

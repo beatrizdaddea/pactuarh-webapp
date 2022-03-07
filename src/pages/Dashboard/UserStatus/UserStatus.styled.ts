@@ -36,45 +36,19 @@ export const FlexButtons = styled.div`
     height: 48px;
     border-radius: 5px;
     color: white;
-    font-size: 14px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     svg {
-      margin-left: 10px;
-    }
-
-    :last-child {
-      margin-left: 10px;
-    }
-  }
-
-  a {
-    background: #000;
-    border: 0;
-    width: 120px;
-    height: 48px;
-    border-radius: 5px;
-    color: white;
-
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    svg {
-      margin-left: 10px;
-    }
-
-    :last-child {
       margin-left: 10px;
     }
   }
 `
 
 export const Table = styled.table`
+  /* width: 100%; */
   background: white;
   border-radius: 5px;
 `
