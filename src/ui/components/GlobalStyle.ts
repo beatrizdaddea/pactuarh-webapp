@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
+    font-family: ${theme.font.family};
   }
 
   a {

@@ -28,7 +28,7 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   // create initial menuCollapse state using useState hook
-  const [menuCollapse, setMenuCollapse] = useState(false)
+  const [menuCollapse, setMenuCollapse] = useState(true)
 
   // create a custom function that will change menucollapse state from false to true and true to false
   const menuIconClick = () => {
@@ -59,7 +59,9 @@ const Sidebar = () => {
                   Início
                 </MenuItem>
                 <SubMenu title='Cadastros' icon={<FiEdit />}>
-                  <MenuItem>Usuário</MenuItem>
+                  <MenuItem>
+                    <Link to='/cadastrar-usuario'>Usuário</Link>
+                  </MenuItem>
                   <MenuItem>Empresas</MenuItem>
                   <MenuItem>Profissionais</MenuItem>
                   <MenuItem>Funções</MenuItem>

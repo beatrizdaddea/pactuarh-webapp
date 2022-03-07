@@ -45,7 +45,7 @@ export const Password = styled.div`
     position: relative;
     left: 320px;
     transition: 1s;
-    top: -41px;
+    top: -37px;
     width: 30px;
     color: ${theme.colors.black};
     opacity: 45%;

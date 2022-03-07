@@ -25,6 +25,7 @@ import SignIn from './pages/SignIn'
 import SignUp from 'pages/SignUp'
 import Terms from 'pages/Terms/Terms'
 import Home from 'pages/Dashboard/Home'
+import UserRegistration from 'pages/Dashboard/UserRegistration'
 
 const RoutesApp = () => {
   return (
@@ -34,6 +35,7 @@ const RoutesApp = () => {
         <Route path='/cadastro' element={<SignUp />} />
         <Route path='/termos' element={<Terms />} />
         <Route path='/dashboard' element={<Home />} />
+        <Route path='/cadastrar-usuario' element={<UserRegistration />} />
       </Routes>
     </BrowserRouter>
   )
