@@ -1,12 +1,11 @@
 import Sidebar from 'ui/components/Sidebar'
 import Modal from 'react-modal'
 import { FiPlus, FiEye, FiEdit, FiTrash, FiX } from 'react-icons/fi'
-import * as S from './UserRegistration.styled'
+import * as S from './Company.styled'
 import { useState } from 'react'
 import InputMask from 'react-input-mask'
-import { Link } from 'react-router-dom'
 
-export default function UserRegistration() {
+export default function Company() {
   const [modalIsOpen, setIsOpen] = useState(false)
   const [modalIsOpenNew, setIsOpenNew] = useState(false)
 
@@ -37,23 +36,20 @@ export default function UserRegistration() {
             <button onClick={openModalNew}>
               Novo <FiPlus size={18} color='#fff' />
             </button>
-            <Link to='/status-de-usuario'>
-              Status <FiEye size={18} color='#fff' />
-            </Link>
           </S.FlexButtons>
 
           <S.Table>
             <S.TrTitle>
-              <td>Nome</td>
-              <td>Gênero</td>
-              <td>CPF</td>
-              <td>RG</td>
+              <td>CNPJ</td>
+              <td>Razão Social</td>
+              <td>Nome fantasia</td>
+              <td>CNAE</td>
             </S.TrTitle>
             <S.TrSecond>
-              <td>Giovanna</td>
-              <td>Mulher</td>
-              <td>000.000.000-00</td>
-              <td>000.000.000</td>
+              <td>00000000</td>
+              <td>Teste Inc.</td>
+              <td>Teste</td>
+              <td>Desenvolvimento</td>
               <td>
                 <button onClick={openModal}>
                   <FiEdit size={18} />
@@ -84,17 +80,16 @@ export default function UserRegistration() {
         </button>
 
         <S.ContainerForm>
-          <h2>Editar usuário</h2>
+          <h2>Editar Empresa</h2>
 
-          <input type='text' value='Ryan Costa' />
-
-          <select name='' id=''>
-            <option value=''>Homem</option>
-            <option value=''>Mulher</option>
-            <option value=''>Prefiro não responder</option>
-          </select>
-          <InputMask mask='999.999.999-99' placeholder='Seu CPF' />
-          <InputMask mask='99.999.999-9' placeholder='Seu RG' />
+          <input type='number' placeholder='CNPJ' />
+          <input type='text' placeholder='Razão Social' />
+          <input type='text' placeholder='Nome fantasia' />
+          <input type='text' placeholder='Inscrição Estadual' />
+          <input type='text' placeholder='Inscrição Municipal' />
+          <input type='text' placeholder='CNAE' />
+          <input type='text' placeholder='CEP*' />
+          <input type='text' placeholder='Logradouro' />
         </S.ContainerForm>
       </Modal>
 
@@ -113,24 +108,16 @@ export default function UserRegistration() {
         </button>
 
         <S.ContainerForm>
-          <h2>Novo usuário</h2>
+          <h2>Cadastrar empresa</h2>
 
-          <input type='text' placeholder='Seu nome completo' />
-          <InputMask mask='99/99/9999' placeholder='Data de nascimento' />
-
-          <select name='' id=''>
-            <option hidden>Gênero</option>
-            <option value=''>Mulher</option>
-            <option value=''>Homem</option>
-            <option value=''>Prefiro não responder</option>R
-          </select>
-
-          <select name='' id=''>
-            <option hidden>Estado civil</option>
-            <option value=''>Solteiro(a)</option>
-            <option value=''>Casado(a)</option>
-            <option value=''>Viúvo(a)</option>
-          </select>
+          <input type='number' placeholder='CNPJ' />
+          <input type='text' placeholder='Razão Social' />
+          <input type='text' placeholder='Nome fantasia' />
+          <input type='text' placeholder='Inscrição Estadual' />
+          <input type='text' placeholder='Inscrição Municipal' />
+          <input type='text' placeholder='CNAE' />
+          <input type='text' placeholder='CEP*' />
+          <input type='text' placeholder='Logradouro' />
 
           <button>Enviar</button>
         </S.ContainerForm>

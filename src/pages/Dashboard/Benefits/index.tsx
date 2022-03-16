@@ -1,12 +1,11 @@
 import Sidebar from 'ui/components/Sidebar'
 import Modal from 'react-modal'
 import { FiPlus, FiEye, FiEdit, FiTrash, FiX } from 'react-icons/fi'
-import * as S from './UserRegistration.styled'
+import * as S from './Benefits.styled'
 import { useState } from 'react'
 import InputMask from 'react-input-mask'
-import { Link } from 'react-router-dom'
 
-export default function UserRegistration() {
+export default function Benefits() {
   const [modalIsOpen, setIsOpen] = useState(false)
   const [modalIsOpenNew, setIsOpenNew] = useState(false)
 
@@ -37,23 +36,20 @@ export default function UserRegistration() {
             <button onClick={openModalNew}>
               Novo <FiPlus size={18} color='#fff' />
             </button>
-            <Link to='/status-de-usuario'>
-              Status <FiEye size={18} color='#fff' />
-            </Link>
           </S.FlexButtons>
 
           <S.Table>
             <S.TrTitle>
-              <td>Nome</td>
-              <td>Gênero</td>
-              <td>CPF</td>
-              <td>RG</td>
+              <td>Nome do benefício</td>
+              <td>Razão Social</td>
+              <td>Data admissão</td>
+              <td>Data demissão</td>
             </S.TrTitle>
             <S.TrSecond>
-              <td>Giovanna</td>
-              <td>Mulher</td>
-              <td>000.000.000-00</td>
-              <td>000.000.000</td>
+              <td>Auxilio infraestrutura</td>
+              <td>front end</td>
+              <td>25/09/2022</td>
+              <td></td>
               <td>
                 <button onClick={openModal}>
                   <FiEdit size={18} />
@@ -84,17 +80,16 @@ export default function UserRegistration() {
         </button>
 
         <S.ContainerForm>
-          <h2>Editar usuário</h2>
+          <h2>Editar benefício</h2>
 
-          <input type='text' value='Ryan Costa' />
-
-          <select name='' id=''>
-            <option value=''>Homem</option>
-            <option value=''>Mulher</option>
-            <option value=''>Prefiro não responder</option>
-          </select>
-          <InputMask mask='999.999.999-99' placeholder='Seu CPF' />
-          <InputMask mask='99.999.999-9' placeholder='Seu RG' />
+          <input type='text' placeholder='Nome do benefício' />
+          <input type='text' placeholder='Descrição' />
+          <input type='text' placeholder='Operadora da assistência médica' />
+          <input type='text' placeholder='Razão Social' />
+          <input type='number' placeholder='CNPJ' />
+          <input type='text' placeholder='Registro da ASN' />
+          <input type='number' placeholder='Data admissão ' />
+          <input type='number' placeholder='Data demissão' />
         </S.ContainerForm>
       </Modal>
 
@@ -113,24 +108,16 @@ export default function UserRegistration() {
         </button>
 
         <S.ContainerForm>
-          <h2>Novo usuário</h2>
+          <h2>Cadastrar benefício</h2>
 
-          <input type='text' placeholder='Seu nome completo' />
-          <InputMask mask='99/99/9999' placeholder='Data de nascimento' />
-
-          <select name='' id=''>
-            <option hidden>Gênero</option>
-            <option value=''>Mulher</option>
-            <option value=''>Homem</option>
-            <option value=''>Prefiro não responder</option>R
-          </select>
-
-          <select name='' id=''>
-            <option hidden>Estado civil</option>
-            <option value=''>Solteiro(a)</option>
-            <option value=''>Casado(a)</option>
-            <option value=''>Viúvo(a)</option>
-          </select>
+          <input type='text' placeholder='Nome do benefício' />
+          <input type='text' placeholder='Descrição' />
+          <input type='text' placeholder='Operadora da assistência médica' />
+          <input type='text' placeholder='Razão Social' />
+          <input type='number' placeholder='CNPJ' />
+          <input type='text' placeholder='Registro da ASN' />
+          <input type='number' placeholder='Data admissão ' />
+          <input type='number' placeholder='Data demissão' />
 
           <button>Enviar</button>
         </S.ContainerForm>

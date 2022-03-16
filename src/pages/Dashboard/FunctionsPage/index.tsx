@@ -1,12 +1,11 @@
 import Sidebar from 'ui/components/Sidebar'
 import Modal from 'react-modal'
 import { FiPlus, FiEye, FiEdit, FiTrash, FiX } from 'react-icons/fi'
-import * as S from './UserRegistration.styled'
+import * as S from './FunctionsPage.styled'
 import { useState } from 'react'
 import InputMask from 'react-input-mask'
-import { Link } from 'react-router-dom'
 
-export default function UserRegistration() {
+export default function FunctionsPage() {
   const [modalIsOpen, setIsOpen] = useState(false)
   const [modalIsOpenNew, setIsOpenNew] = useState(false)
 
@@ -37,23 +36,20 @@ export default function UserRegistration() {
             <button onClick={openModalNew}>
               Novo <FiPlus size={18} color='#fff' />
             </button>
-            <Link to='/status-de-usuario'>
-              Status <FiEye size={18} color='#fff' />
-            </Link>
           </S.FlexButtons>
 
           <S.Table>
             <S.TrTitle>
-              <td>Nome</td>
-              <td>Gênero</td>
-              <td>CPF</td>
-              <td>RG</td>
+              <td>Função</td>
+              <td>Mão de obra</td>
+              <td>Grau de instrução</td>
+              <td>Requisito da função</td>
             </S.TrTitle>
             <S.TrSecond>
-              <td>Giovanna</td>
-              <td>Mulher</td>
-              <td>000.000.000-00</td>
-              <td>000.000.000</td>
+              <td>Dev</td>
+              <td>front end</td>
+              <td>Ensino medio</td>
+              <td>Desenvolvimento</td>
               <td>
                 <button onClick={openModal}>
                   <FiEdit size={18} />
@@ -84,17 +80,17 @@ export default function UserRegistration() {
         </button>
 
         <S.ContainerForm>
-          <h2>Editar usuário</h2>
+          <h2>Editar Função</h2>
 
-          <input type='text' value='Ryan Costa' />
-
-          <select name='' id=''>
-            <option value=''>Homem</option>
-            <option value=''>Mulher</option>
-            <option value=''>Prefiro não responder</option>
+          <input type='text' placeholder='Função' />
+          <input type='text' placeholder='Mão de obra' />
+          <select>
+            <option>Trabalho em equipe?</option>
+            <option>Sim</option>
+            <option>Não</option>
           </select>
-          <InputMask mask='999.999.999-99' placeholder='Seu CPF' />
-          <InputMask mask='99.999.999-9' placeholder='Seu RG' />
+          <input type='text' placeholder='Grau de instrução' />
+          <input type='text' placeholder='Requisito da função' />
         </S.ContainerForm>
       </Modal>
 
@@ -113,24 +109,17 @@ export default function UserRegistration() {
         </button>
 
         <S.ContainerForm>
-          <h2>Novo usuário</h2>
+          <h2>Cadastrar função</h2>
 
-          <input type='text' placeholder='Seu nome completo' />
-          <InputMask mask='99/99/9999' placeholder='Data de nascimento' />
-
-          <select name='' id=''>
-            <option hidden>Gênero</option>
-            <option value=''>Mulher</option>
-            <option value=''>Homem</option>
-            <option value=''>Prefiro não responder</option>R
+          <input type='text' placeholder='Função' />
+          <input type='text' placeholder='Mão de obra' />
+          <select>
+            <option>Trabalho em equipe?</option>
+            <option>Sim</option>
+            <option>Não</option>
           </select>
-
-          <select name='' id=''>
-            <option hidden>Estado civil</option>
-            <option value=''>Solteiro(a)</option>
-            <option value=''>Casado(a)</option>
-            <option value=''>Viúvo(a)</option>
-          </select>
+          <input type='text' placeholder='Grau de instrução' />
+          <input type='text' placeholder='Requisito da função' />
 
           <button>Enviar</button>
         </S.ContainerForm>

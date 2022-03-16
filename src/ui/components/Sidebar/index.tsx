@@ -62,12 +62,25 @@ const Sidebar = () => {
                   <MenuItem>
                     <Link to='/cadastrar-usuario'>Usuário</Link>
                   </MenuItem>
-                  <MenuItem>Empresas</MenuItem>
-                  <MenuItem>Profissionais</MenuItem>
-                  <MenuItem>Funções</MenuItem>
-                  <MenuItem>Benefícios</MenuItem>
-                  <MenuItem>Relatórios</MenuItem>
-                  <MenuItem>Questionários</MenuItem>
+                  <MenuItem>
+                    <Link to='/cadastro-da-empresa'>Empresas</Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link to='/profissionais'>Profissionais</Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link to='/cargos'>Cargos</Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link to='/funcoes'>Funções</Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link to='/beneficios'>Benefícios</Link>
+                  </MenuItem>
+                  <MenuItem>Relatórios*</MenuItem>
+                  <MenuItem>
+                    <Link to='/questionarios'>Questionários</Link>
+                  </MenuItem>
                 </SubMenu>
 
                 <SubMenu title='Avaliação' icon={<FiTrendingUp />}>
