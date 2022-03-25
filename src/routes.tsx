@@ -12,6 +12,7 @@ import Positions from 'pages/Dashboard/Positions'
 import FunctionsPage from 'pages/Dashboard/FunctionsPage'
 import Benefits from 'pages/Dashboard/Benefits'
 import Questionnaires from 'pages/Dashboard/Questionnaires'
+import Plans from 'pages/Dashboard/Plans'
 
 const RoutesApp = () => {
   return (
@@ -29,6 +30,7 @@ const RoutesApp = () => {
         <Route path='/funcoes' element={<FunctionsPage />} />
         <Route path='/beneficios' element={<Benefits />} />
         <Route path='/questionarios' element={<Questionnaires />} />
+        <Route path='/planos' element={<Plans />} />
       </Routes>
     </BrowserRouter>
   )

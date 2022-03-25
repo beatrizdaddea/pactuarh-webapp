@@ -74,11 +74,9 @@ export const Container = styled.div`
   #header .logo {
     padding: 20px;
   }
-
   #header .pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
     background-color: #000;
   }
-
   #header
     .pro-sidebar-inner
     .pro-sidebar-layout
@@ -88,7 +86,6 @@ export const Container = styled.div`
     background-color: #2b2b2b;
     color: white;
   }
-
   /* @media only screen and (max-width: 720px) {
     html {
       overflow: hidden;
