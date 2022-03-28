@@ -39,6 +39,7 @@ grid-template-columns: repeat(3, 2fr);
     width: 280px;
     height: 538px;
     margin-left:70px;
+    margin-bottom:45px;
     padding:80px 10px 25px 0px;
     background: #FEFDFF;
     border-radius: 5px;
@@ -49,7 +50,7 @@ grid-template-columns: repeat(3, 2fr);
     position: absolute;
     margin-left: -10px;
     align-item:left;
-    bottom: 57%;
+    bottom: 60%;
     width:30px;
   }
 

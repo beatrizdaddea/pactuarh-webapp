@@ -85,8 +85,13 @@ const Sidebar = () => {
 
                 <SubMenu title='Avaliação' icon={<FiTrendingUp />}>
                   <MenuItem>Desempenho</MenuItem>
-                  <MenuItem>Geral</MenuItem>
+
+                  <MenuItem>
+                    <Link to='/avaliacao-geral'>Geral</Link>
+                  </MenuItem>
+                    
                   <MenuItem>Individual</MenuItem>
+
                   <MenuItem>Recuperação</MenuItem>
                   <MenuItem>Desenvolvimento</MenuItem>
                   <MenuItem>9box</MenuItem>
