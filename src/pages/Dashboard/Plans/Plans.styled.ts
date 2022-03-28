@@ -20,8 +20,8 @@ export const Container = styled.div`
 
   img{
     margin: 25px 10px 45px 0px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
 
   @media (max-width: 970px) {
@@ -33,24 +33,23 @@ export const ContainerPlans = styled.div`
 
 display: grid;
 grid-template-columns: repeat(3, 2fr);
+margin-bottom:75px;
 
   div{ 
     text-align: center;
     width: 280px;
     height: 538px;
     margin-left:70px;
-    margin-bottom:45px;
-    padding:80px 10px 25px 0px;
+    padding:0px 10px 45px 0px;
     background: #FEFDFF;
     border-radius: 5px;
     align-item:center;
   }
 
   .planos-icon{
-    position: absolute;
-    margin-left: -10px;
+    position:relative;
+    margin-left: 10px;
     align-item:left;
-    bottom: 60%;
     width:30px;
   }
 
