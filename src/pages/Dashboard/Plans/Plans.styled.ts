@@ -40,11 +40,13 @@ margin-bottom:75px;
     width: 280px;
     height: 538px;
     margin-left:70px;
-    padding:0px 10px 45px 0px;
+    padding:5px 10px 45px 0px;
     background: #FEFDFF;
     border-radius: 5px;
     align-item:center;
   }
+
+
 
   .planos-icon{
     position:relative;

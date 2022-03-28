@@ -3,6 +3,7 @@ import Sidebar from 'ui/components/Sidebar'
 import Modal from 'react-modal'
 import { useState } from 'react'
 import { FiPlus, FiEye, FiEdit, FiTrash, FiX } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 
 export default function GeneralEvaluation() {
@@ -46,8 +47,14 @@ export default function GeneralEvaluation() {
                     <S.TrSecond>
                       <td>Giovanna</td>
                       <td>
+                      <button>
+                         <Link to='/'><FiEye size={18}/>
+                    </Link>
+                    </button>
+                      </td>
+                      <td>
                         <button onClick={openModal}>
-                          <FiEdit size={18} />
+                          <FiEdit size={18}/>
                         </button>
                       </td>
                       <td>
@@ -55,6 +62,27 @@ export default function GeneralEvaluation() {
                           <FiTrash size={18} />
                         </button>
                       </td>
+                    </S.TrSecond>
+
+                    <S.TrSecond>
+                      <td> Teste</td>
+                      <td>
+                      <button>
+                         <Link to='/'><FiEye size={18}/>
+                    </Link>
+                    </button>
+                      </td>
+                      <td>
+                        <button onClick={openModal}>
+                          <FiEdit size={18}/>
+                        </button>
+                      </td>
+                      <td>
+                        <button>
+                          <FiTrash size={18} />
+                        </button>
+                      </td>
+                      
                     </S.TrSecond>
                   </S.Table>
                 </S.Container>

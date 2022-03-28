@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import { theme } from 'config'
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,9 +34,6 @@ export const FlexButtons = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    svg {
-      margin-left: 10px;
-    }
   }
 `
 
@@ -60,12 +55,46 @@ export const TrTitle = styled.tr`
 export const TrSecond = styled.tr`
   height: 53px;
   background: white;
+
+
   td {
-    padding: 20px;
+    padding: 25px;
+
   }
   button {
-    background: transparent;
+    position: absolute;
+    background:transparent;
     border: 0;
+    border-radius: 5px;
+    margin-left:50px;
+    color: black;
+    font-size: 14px;
+    
+
+    svg {
+      margin-left: 20px;
+    
+    :last-child {
+      margin-left: 20px;
+    }
+  }
+
+  a {
+    border: 0;
+    padding: 0;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    svg {
+      margin-left: 10px;
+    }
+    :last-child {
+      margin-left: 10px;
+    }
   }
 `
 
