@@ -56,27 +56,22 @@ export const TrSecond = styled.tr`
   height: 53px;
   background: white;
 
-
   td {
-    padding: 25px;
-
+    padding: 15px;
+   
   }
+
   button {
-    position: absolute;
+    margin-left:65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    postion:absolute;
     background:transparent;
     border: 0;
     border-radius: 5px;
-    margin-left:50px;
     color: black;
     font-size: 14px;
-    
-
-    svg {
-      margin-left: 20px;
-    
-    :last-child {
-      margin-left: 20px;
-    }
   }
 
   a {
@@ -90,10 +85,10 @@ export const TrSecond = styled.tr`
     justify-content: center;
     
     svg {
-      margin-left: 10px;
+      margin-left: 90px;
     }
     :last-child {
-      margin-left: 10px;
+      margin-left: 15px;
     }
   }
 `

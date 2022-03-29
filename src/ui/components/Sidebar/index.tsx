@@ -84,8 +84,9 @@ const Sidebar = () => {
                 </SubMenu>
 
                 <SubMenu title='Avaliação' icon={<FiTrendingUp />}>
-                  <MenuItem>Desempenho</MenuItem>
-
+                <MenuItem>
+                     <Link to='/desempenho'> Desempenho</Link>
+                </MenuItem>
                   <MenuItem>
                     <Link to='/avaliacao-geral'>Geral</Link>
                   </MenuItem>

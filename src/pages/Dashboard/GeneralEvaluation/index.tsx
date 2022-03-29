@@ -62,6 +62,8 @@ export default function GeneralEvaluation() {
                           <FiTrash size={18} />
                         </button>
                       </td>
+
+                   
                     </S.TrSecond>
 
                     <S.TrSecond>
